@@ -6,10 +6,19 @@
 ```zsh
 docker build -t IMAGE .
 ```
+
+<br />
 適宜`IMAGE`を名付ける
 
 ```zsh
 docker run --rm -it --gpus all -v $(pwd):/work IMAGE
 ```
 機械学習を行うのでGPUを使用するように設定
+
+<br />
+<br />
+
+
+### .ignoreについて
+原則.pyファイル, README.md, .gitignore以外はcommitできないようにしている。
 
